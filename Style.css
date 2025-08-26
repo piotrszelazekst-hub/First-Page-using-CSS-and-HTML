@@ -1,0 +1,95 @@
+/* --- STYLE BAZOWE --- */
+body {
+  background-color: rgb(243, 229, 216);
+}
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  
+}
+
+.opisOmlet,
+ul, li, ol, table {
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto 0;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.preparation {
+  background: rgba(255, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 10px;
+  line-height: 1.8;
+}
+
+.preparation h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.brownOne { color: hsl(14, 45%, 36%); }
+.redOne   { color: hsl(332, 51%, 32%); }
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+tr:last-child td { border-bottom: none; }
+
+.brownOneGrube {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+}
+
+footer a { color: #1a73e8; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* --- MEDIA --- */
+
+/* Mobile 375px */
+@media (max-width: 375px) {
+  .preparation h2 { font-size: 1rem; }
+  .container { padding: 15px; }
+}
+
+/* Desktop 1440px */
+@media (min-width: 1440px) {
+  .container { padding: 50px; margin-top: 20px; }
+  .preparation { padding: 5px 15px 10px 25px; line-height: 3; }
+  .preparation h2 { font-size: 1.5rem; }
+}
